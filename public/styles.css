@@ -241,6 +241,19 @@ img, video, svg { display: block; max-width: 100%; }
 .case-main { max-width: 36rem; margin: 0 auto; }
 .case-header { margin-bottom: 2.5rem; }
 .case-topbar { margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; gap: .75rem; }
+.back {
+  display: inline-flex; align-items: center; gap: .375rem; height: 1.75rem;
+  padding: 0 .625rem 0 .5rem; font-size: .875rem; line-height: 1; border-radius: 9999px;
+  color: var(--text-mid); background: var(--surface); border: 1px solid var(--border);
+  transition: color .2s ease, background-color .2s ease, border-color .2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.back svg { width: 14px; height: 14px; flex: none; transition: transform .2s ease; }
+.back:hover { color: var(--text-strong); background: var(--surface-2); }
+.back:hover svg { transform: translateX(-2px); }
+.back:active { transform: scale(.97); }
+.dark .back { color: #d4d4d8; background: #18181b; border-color: #27272a; }
+.dark .back:hover { color: #fafafa; background: #27272a; }
 .case-kicker { font-size: .875rem; color: var(--text-soft); }
 .case-title { margin-top: .5rem; font-size: 1.125rem; line-height: 1.75rem; color: var(--text-strong); }
 .case-lede { margin-top: .75rem; color: var(--text-soft); }

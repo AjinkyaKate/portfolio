@@ -129,7 +129,7 @@ const casePage = (p, i, all, base) => {
     <main class="case-main">
       <header class="case-header">
         <div class="case-topbar">
-          <a class="btn" href="${base === "/blog" ? "/#blog" : "/"}" aria-label="Back to home"><span>↩</span><span>Back</span></a>
+          <a class="back" href="${base === "/blog" ? "/#blog" : "/"}" aria-label="Back to home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg><span>Back</span></a>
           ${controls()}
         </div>
         <p class="case-kicker">${p.category ? `${esc(p.category)} · ${esc(p.year)}` : `${esc(fmtDate(p.date))}${p.readTime ? ` · ${esc(p.readTime)}` : ""}`}</p>
