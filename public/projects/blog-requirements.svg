@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#f0fdf4"/>
+  <rect x="40" y="40" width="720" height="420" rx="16" fill="#ffffff" stroke="#e4e4e7"/>
+  <rect x="64" y="64" width="160" height="12" rx="6" fill="#16a34a"/>
+  <rect x="64" y="96" width="340" height="8" rx="4" fill="#e4e4e7"/>
+  <rect x="64" y="116" width="280" height="8" rx="4" fill="#e4e4e7"/>
+  <rect x="64" y="160" width="672" height="1" fill="#e4e4e7"/>
+  <g fill="#f4f4f5"><rect x="64" y="184" width="210" height="110" rx="10"/><rect x="295" y="184" width="210" height="110" rx="10"/><rect x="526" y="184" width="210" height="110" rx="10"/></g>
+  <g fill="#16a34a" opacity=".9"><rect x="80" y="200" width="60" height="8" rx="4"/><rect x="311" y="200" width="60" height="8" rx="4"/><rect x="542" y="200" width="60" height="8" rx="4"/></g>
+  <rect x="64" y="320" width="672" height="100" rx="10" fill="#fafafa" stroke="#e4e4e7"/>
+  <text x="400" y="376" font-family="Geist, system-ui, sans-serif" font-size="26" text-anchor="middle" fill="#18181b">Blog</text>
+</svg>

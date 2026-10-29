@@ -1,0 +1,1 @@
+{ "outputDirectory": "dist", "buildCommand": "node build.mjs", "cleanUrls": true, "trailingSlash": true }
