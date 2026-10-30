@@ -82,7 +82,9 @@ const home = `${head(site.name, site.description)}
       <p class="label">Elsewhere</p>
       <p class="lead">Where to find me online</p>
       <div class="links">
-        ${site.links.map((l, i) => `<span><a href="${esc(l.href)}" target="_blank" rel="noreferrer">${l.icon && icons[l.icon] ? `<span class="link-icon">${icons[l.icon]}</span>` : ""}${esc(l.label)}</a>${i < site.links.length - 1 ? `<span class="dot">·</span>` : ""}</span>`).join("\n        ")}
+        ${site.links.map((l) => l.icon && icons[l.icon]
+          ? `<a class="link-icon-only" href="${esc(l.href)}" target="_blank" rel="noreferrer" aria-label="${esc(l.label)}" title="${esc(l.label)}">${icons[l.icon]}</a>`
+          : `<a href="${esc(l.href)}" target="_blank" rel="noreferrer">${esc(l.label)}</a>`).join("\n        ")}
       </div>
     </div>
     <div class="reveal">

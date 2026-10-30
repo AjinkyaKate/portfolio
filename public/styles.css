@@ -197,10 +197,16 @@ img, video, svg { display: block; max-width: 100%; }
 .dark .links a { color: #d4d4d8; text-decoration-color: #52525b; }
 .links a:hover { color: var(--blue); text-decoration-color: var(--blue); }
 .links .dot { color: var(--dot); }
-.links a { display: inline-flex; align-items: center; gap: .375rem; }
-.link-icon { display: inline-flex; width: 14px; height: 14px; color: var(--text-faint); transition: color .2s ease; }
-.link-icon svg { width: 14px; height: 14px; }
-.links a:hover .link-icon { color: var(--blue); }
+.links { column-gap: .25rem; }
+.links a.link-icon-only {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 2.25rem; height: 2.25rem; border-radius: .5rem; text-decoration: none;
+  color: var(--text-mid); transition: color .2s ease, background-color .2s ease;
+}
+.links a.link-icon-only svg { width: 18px; height: 18px; }
+.links a.link-icon-only:hover { color: var(--blue); background: var(--surface-2); }
+.dark .links a.link-icon-only { color: #d4d4d8; }
+.dark .links a.link-icon-only:hover { color: var(--blue); background: #1c1c1c; }
 
 /* Footer */
 .site-footer {
