@@ -107,7 +107,7 @@ const casePage = (p, i, all, base) => {
     <section id="${s.id}" class="case-section">
       ${s.title ? `<h2>${esc(s.title)}</h2>` : ""}
       ${s.tags ? `<div class="tags">${s.tags.map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>` : ""}
-      <div class="prose">${(s.paragraphs || []).map((t) => `<p>${esc(t)}</p>`).join("")}</div>
+      ${(s.paragraphs || []).length ? `<div class="prose">${s.paragraphs.map((t) => `<p>${esc(t)}</p>`).join("")}</div>` : ""}
       ${s.figure ? `<div class="case-figure"><button type="button" data-zoom="${esc(s.figure)}" aria-label="Open ${esc(s.title)} media"><img alt="${esc(s.title)} media" src="${esc(s.figure)}" /></button></div>` : ""}
     </section>`).join("");
   const heroKind = p.media && p.media.type === "video" ? "video" : "image";
