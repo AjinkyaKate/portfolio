@@ -10,10 +10,10 @@ export const site = {
   lastUpdated: "October 2026",
   year: "2026",
   links: [
-    { label: "Email", href: "mailto:ajinkyakate2001@gmail.com" },
-    { label: "GitHub", href: "https://github.com/AjinkyaKate" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/ajinkya-kate" },
-    { label: "Twitter", href: "https://x.com/Ajinkya_Kate_" },
+    { label: "Email", href: "mailto:ajinkyakate2001@gmail.com", icon: "mail" },
+    { label: "GitHub", href: "https://github.com/AjinkyaKate", icon: "github" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/ajinkya-kate", icon: "linkedin" },
+    { label: "X", href: "https://x.com/Ajinkya_Kate_", icon: "x" },
   ],
 };
 
