@@ -164,7 +164,7 @@ export const projects = [
         paragraphs: [
           "Test the model yourself before you write the spec. The 34-field checklist replaced a page of prose and settled most arguments about whether the model or the requirement was wrong.",
           "Design the correction path first. A model that is right most of the time with a two-second fix beats a slightly better model with no way to fix the rest.",
-          "The reader above is my own test build and it is live at Modisoft's scale this feature runs with real customers. Next is learning from overrides so the same correction is never asked twice.",
+          "The reader above is my own test build, and it is live. At Modisoft the production feature runs with real customers. Next is learning from overrides so the same correction is never asked twice.",
         ],
       },
       {
