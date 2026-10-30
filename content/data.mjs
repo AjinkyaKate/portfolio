@@ -1,6 +1,15 @@
 // All site content lives here. Edit this file, then run `node build.mjs`.
 // Anything marked [[fill]] is a placeholder for Ajinkya to replace.
 
+// Opens a Gmail compose window with the address, subject and a first line already filled in.
+const gmailCompose = (to, subject, body) =>
+  `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(to)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+const emailHref = gmailCompose(
+  "ajinkyakate2001@gmail.com",
+  "Hi Ajinkya, found you through your portfolio",
+  "Hi Ajinkya,\n\nI came across your portfolio and wanted to talk about ",
+);
+
 export const site = {
   name: "Ajinkya Kate",
   title: "Product Manager",
@@ -10,7 +19,7 @@ export const site = {
   lastUpdated: "October 2026",
   year: "2026",
   links: [
-    { label: "Email", href: "mailto:ajinkyakate2001@gmail.com", icon: "mail" },
+    { label: "Email", href: emailHref, icon: "mail" },
     { label: "GitHub", href: "https://github.com/AjinkyaKate", icon: "github" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/ajinkya-kate", icon: "linkedin" },
     { label: "X", href: "https://x.com/Ajinkya_Kate_", icon: "x" },
@@ -22,7 +31,7 @@ export const bio = [
   `Hi, I'm Ajinkya, a <span class="underline">product manager</span> based in Pune, India.`,
   `Most recently I was the AI PM at Modisoft, where I shipped a <a class="inline-link" href="/projects/invoice-reader/">document intelligence</a> feature that reads supplier invoices into the catalog, and took a <a class="inline-link" href="/projects/demand-forecasting/">demand forecasting</a> module from idea to pilot. Before that I spent a year and a half at D·engage launching an RCS channel across 150+ enterprise clients and a Snapchat audience sync that reached $6K MRR in two sprints.`,
   `I care about products that turn new channels into revenue, and I build small tools myself to stay close to how things actually work.`,
-  `Want to work together? <a class="inline-link" target="_blank" rel="noopener noreferrer" href="https://cal.com/ajinkya-kate/30min">Book a call</a> or reach out on <a class="inline-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ajinkya-kate">LinkedIn</a>.`, // [[fill]] real cal.com link
+  `Want to work together? <a class="inline-link" target="_blank" rel="noopener noreferrer" href="https://cal.com/ajinkya-kate/30min">Book a call</a>, <a class="inline-link" target="_blank" rel="noopener noreferrer" href="${emailHref}">send me an email</a> or reach out on <a class="inline-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ajinkya-kate">LinkedIn</a>.`, // [[fill]] real cal.com link
 ];
 
 // Projects. The first `initialCount` show by default; the rest appear after "See more".
