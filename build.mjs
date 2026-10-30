@@ -56,7 +56,7 @@ const collection = ({ id, label, items, initial, view, toggle = true }) => `
 </div>`;
 
 /* ---------- Home ---------- */
-const projectItems = projects.map((p) => ({ title: p.title, description: p.description, href: `/projects/${p.slug}/`, src: p.media.src, bg: !!p.media.bg }));
+const projectItems = projects.map((p) => ({ title: p.title, description: p.description, href: `/projects/${p.slug}/`, src: p.media.thumb || p.media.src, video: p.media.cardVideo ? p.media.src : undefined, bg: !!p.media.bg }));
 const fmtDate = (d) => new Date(d + "T00:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 // posts still holding [[fill]] placeholders stay unpublished
 const sortedPosts = posts.filter((p) => !JSON.stringify(p).includes("[[fill]]")).sort((a, b) => b.date.localeCompare(a.date));
@@ -112,7 +112,7 @@ const casePage = (p, i, all, base) => {
     </section>`).join("");
   const heroKind = p.media && p.media.type === "video" ? "video" : "image";
   const hero = !p.media ? "" : heroKind === "video"
-    ? `<video src="${esc(p.media.src)}" autoplay loop muted playsinline></video>`
+    ? `<video src="${esc(p.media.src)}"${p.media.poster ? ` poster="${esc(p.media.poster)}"` : ""} autoplay loop muted playsinline></video>`
     : `<img src="${esc(p.media.src)}" alt="${esc(p.title)}"${p.media.fit === "contain" ? ` style="object-fit:contain"` : ""} />`;
   return `${head(`${p.title} · ${site.name}`, p.description)}
 <body>

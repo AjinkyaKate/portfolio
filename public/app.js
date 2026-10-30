@@ -90,8 +90,14 @@
           var media = document.createElement("div");
           media.className = "card-media" + (it.bg ? " has-bg" : "");
           var inner = document.createElement("div"); inner.className = it.bg ? "framed" : "inset";
-          var img = document.createElement("img"); img.src = it.src; img.alt = it.title; img.loading = "lazy";
-          inner.appendChild(img); media.appendChild(inner);
+          var el;
+          if (it.video) {
+            el = document.createElement("video"); el.src = it.video; el.poster = it.src;
+            el.autoplay = true; el.loop = true; el.muted = true; el.playsInline = true; el.setAttribute("aria-label", it.title);
+          } else {
+            el = document.createElement("img"); el.src = it.src; el.alt = it.title; el.loading = "lazy";
+          }
+          inner.appendChild(el); media.appendChild(inner);
           var text = document.createElement("div"); text.className = "card-text";
           var h = document.createElement("h3"); h.textContent = it.title;
           var p = document.createElement("p"); p.textContent = it.description;

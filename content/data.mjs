@@ -32,18 +32,21 @@ export const projects = [
   {
     slug: "demand-forecasting",
     title: "Demand Forecasting",
-    description: "A forecasting module for convenience-store items and fuel, from idea to customer pilot.",
+    description: "A forecasting dashboard for convenience-store items and fuel, from idea to customer pilot.",
     category: "Product",
     year: "2026",
-    media: { type: "image", src: "/projects/demand-forecasting.svg", bg: true },
-    links: [],
+    media: { type: "video", src: "/projects/demand-forecast/walkthrough.mp4", poster: "/projects/demand-forecast/poster.png", thumb: "/projects/demand-forecast/hero-light.png", bg: true },
+    links: [
+      { label: "GitHub", href: "https://github.com/AjinkyaKate/demand-forecast-dashboard", icon: "github" },
+      { label: "Visit site", href: "https://demand-forecast-dashboard-drab.vercel.app", icon: "globe" },
+    ],
     sections: [
       {
         id: "overview",
         title: "Overview",
         paragraphs: [
-          "Role: AI Product Manager at Modisoft. I owned discovery, requirements and the pilot.",
-          "Year: 2026. Status: In pilot with customers.",
+          "Role: AI Product Manager at Modisoft. I owned discovery, requirements and the pilot, and built this dashboard myself to test the idea before engineering committed.",
+          "Year: 2026. Status: In pilot with customers. The dashboard above is live, try it with your own sales CSV.",
           "Modisoft serves convenience stores and gas stations. Owners decide what to order mostly from memory, and get it wrong in both directions: empty shelves on busy days and expiring stock on quiet ones.",
         ],
       },
@@ -60,10 +63,21 @@ export const projects = [
         id: "built",
         title: "What I Built",
         paragraphs: [
-          "A forecasting module with two views: items and fuel. Each shows the next period's expected demand, the confidence range and the suggested order quantity.",
-          "I wrote the requirements for the model inputs, the fallbacks when history is thin, and the explanation shown next to every number so an owner can trust it or override it.",
+          "A forecasting dashboard with two views: items and fuel. Each shows the next period's expected demand, the confidence range and the suggested order quantity.",
+          "You drop in a sales CSV, map the columns once, and get a forecast per store. A drivers panel explains what moved each number, and a Model Lab lets you compare forecasting methods on the same data.",
           "Local events and weather were added as signals after the first pilot showed holiday weeks were the biggest misses.",
         ],
+        figure: "/projects/demand-forecast/data-light.png",
+      },
+      {
+        id: "try",
+        title: "Try It in a Minute",
+        paragraphs: [
+          "Open the live dashboard, upload any CSV with a date, an item and a quantity column, and map the three columns.",
+          "Pick a store, read the forecast and the suggested order, then open the drivers panel to see why.",
+          "Switch to Fuel for the price-and-weather view, or to Model Lab to see how the methods disagree.",
+        ],
+        figure: "/projects/demand-forecast/hero-light.png",
       },
       {
         id: "design",
@@ -73,15 +87,17 @@ export const projects = [
           "Every forecast says why in one line. Owners override forecasts they do not understand, so the explanation is part of the product, not a tooltip.",
           "Start with the top fifty items by revenue. Forecasting the long tail added noise and no money.",
         ],
+        figure: "/projects/demand-forecast/lab-light.png",
       },
       {
         id: "tech",
         title: "Tech Stack",
-        tags: ["Time-series models", "POS sales data", "Event and weather signals", "Next.js dashboard"],
+        tags: ["Next.js", "SQLite", "Time-series models", "Event and weather signals", "Vercel"],
         paragraphs: [
-          "Engineering built the models. My job was the inputs, the outputs, the edge cases and the pilot plan.",
-          "I also rebuilt the dashboard myself as a prototype to test layouts with owners before engineering committed.",
+          "At Modisoft, engineering built the production models. My job was the inputs, the outputs, the edge cases and the pilot plan.",
+          "This dashboard is my own build of the same idea: a place to test layouts and explanations with owners before anything shipped.",
         ],
+        figure: "/projects/demand-forecast/fuel-light.png",
       },
       {
         id: "next",
