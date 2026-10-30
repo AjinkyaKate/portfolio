@@ -104,8 +104,11 @@ export const projects = [
     description: "Getting store owners to trust an AI that changes their prices.",
     category: "AI feature",
     year: "2026",
-    media: { type: "image", src: "/projects/invoice-reader.svg", bg: false },
-    links: [],
+    media: { type: "video", src: "/projects/invoice-reader/walkthrough.mp4", poster: "/projects/invoice-reader/poster.png", thumb: "/projects/invoice-reader/poster.png", bg: true },
+    links: [
+      { label: "GitHub", href: "https://github.com/AjinkyaKate/ocr-invoice-tester", icon: "github" },
+      { label: "Visit site", href: "https://invoice-reader-bice.vercel.app", icon: "globe" },
+    ],
     sections: [
       {
         id: "start",
@@ -141,6 +144,7 @@ export const projects = [
         paragraphs: [
           "The invoice reader is live with Modisoft customers. A photo or PDF goes in, line items come out matched to catalog products, and the owner approves the changes from a review screen.",
           "The catalog keeps a change history, so every price that moved can be traced back to the invoice and the person who approved it.",
+          "The reader above is my own test build, and it is live. Drop in a receipt or an invoice, watch every value get outlined on the image, hover a line to see where it came from, then approve. It is the review experience I argued for, in a form you can try.",
         ],
       },
       {
