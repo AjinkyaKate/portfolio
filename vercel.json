@@ -1,1 +1,9 @@
-{ "outputDirectory": "dist", "buildCommand": "node build.mjs", "cleanUrls": true, "trailingSlash": true }
+{
+  "outputDirectory": "dist",
+  "buildCommand": "node build.mjs",
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/call", "destination": "https://calendar.app.google/5q6j1oEd2SrCjzKeA", "permanent": false }
+  ]
+}

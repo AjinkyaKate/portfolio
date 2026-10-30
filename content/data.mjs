@@ -31,7 +31,7 @@ export const bio = [
   `Hi, I'm Ajinkya, a <span class="underline">product manager</span> based in Pune, India.`,
   `Most recently I was the AI PM at Modisoft, where I shipped a <a class="inline-link" href="/projects/invoice-reader/">document intelligence</a> feature that reads supplier invoices into the catalog, and took a <a class="inline-link" href="/projects/demand-forecasting/">demand forecasting</a> module from idea to pilot. Before that I spent a year and a half at D·engage launching an RCS channel across 150+ enterprise clients and a Snapchat audience sync that reached $6K MRR in two sprints.`,
   `I care about products that turn new channels into revenue, and I build small tools myself to stay close to how things actually work.`,
-  `Want to work together? <a class="inline-link" target="_blank" rel="noopener noreferrer" href="https://cal.com/ajinkya-kate/30min">Book a call</a>, <a class="inline-link" target="_blank" rel="noopener noreferrer" href="${emailHref}">send me an email</a> or reach out on <a class="inline-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ajinkya-kate">LinkedIn</a>.`, // [[fill]] real cal.com link
+  `Want to work together? <a class="inline-link" target="_blank" rel="noopener noreferrer" href="/call">Book a call</a>, <a class="inline-link" target="_blank" rel="noopener noreferrer" href="${emailHref}">send me an email</a> or reach out on <a class="inline-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ajinkya-kate">LinkedIn</a>.`,
 ];
 
 // Projects. The first `initialCount` show by default; the rest appear after "See more".
