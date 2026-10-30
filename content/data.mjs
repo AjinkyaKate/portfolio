@@ -13,7 +13,7 @@ export const site = {
     { label: "Email", href: "mailto:ajinkyakate2001@gmail.com" },
     { label: "GitHub", href: "https://github.com/AjinkyaKate" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/ajinkya-kate" },
-    { label: "Twitter", href: "https://x.com/ajinkya_kate" }, // [[fill]] real handle
+    { label: "Twitter", href: "https://x.com/Ajinkya_Kate_" },
   ],
 };
 
