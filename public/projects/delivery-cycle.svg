@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" font-family="Geist, Inter, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1200" height="600" fill="#fafafa"/>
+<text x="600" y="52" text-anchor="middle" font-size="26" font-weight="500" fill="#18181b">From a customer request to a customer update, one owner per step</text>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a1a1aa"/></marker></defs>
+<g stroke="#a1a1aa" stroke-width="2.5" fill="none" marker-end="url(#a)">
+<line x1="305" y1="145" x2="323" y2="145"/>
+<line x1="591" y1="145" x2="609" y2="145"/>
+<line x1="877" y1="145" x2="895" y2="145"/>
+<path d="M1029 207 L1029 233 L171 233 L171 259"/>
+<line x1="305" y1="321" x2="323" y2="321"/>
+<line x1="591" y1="321" x2="609" y2="321"/>
+<line x1="877" y1="321" x2="895" y2="321"/>
+<path d="M1029 383 L1029 409 L171 409 L171 435"/>
+<line x1="305" y1="497" x2="323" y2="497"/>
+<line x1="591" y1="497" x2="609" y2="497"/>
+<path d="M877 497 L914 497 L914 578 L22 578 L22 145 L37.0 145" stroke-dasharray="7 7"/>
+</g>
+<rect x="40" y="86" width="262" height="118" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="58" y="118" font-size="13" letter-spacing="1.6" fill="#1100ff">CUSTOMER SUCCESS</text>
+<text x="58" y="152" font-size="21" font-weight="500" fill="#18181b">Customer request</text>
+<text x="58" y="180" font-size="17" fill="#71717a">A need, a complaint, a gap</text>
+<rect x="326" y="86" width="262" height="118" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="344" y="118" font-size="13" letter-spacing="1.6" fill="#1100ff">PRODUCT</text>
+<text x="344" y="152" font-size="21" font-weight="500" fill="#18181b">Discovery and roadmap</text>
+<text x="344" y="180" font-size="17" fill="#71717a">Needs, competitors, priority</text>
+<rect x="612" y="86" width="262" height="118" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="630" y="118" font-size="13" letter-spacing="1.6" fill="#1100ff">PRODUCT + DESIGN</text>
+<text x="630" y="152" font-size="21" font-weight="500" fill="#18181b">Requirements, design</text>
+<text x="630" y="180" font-size="17" fill="#71717a">Written before any estimate</text>
+<rect x="898" y="86" width="262" height="118" rx="14" fill="#eef0ff" stroke="#1100ff" stroke-width="2"/>
+<text x="916" y="118" font-size="13" letter-spacing="1.6" fill="#1100ff">WHOLE TEAM</text>
+<text x="916" y="152" font-size="21" font-weight="500" fill="#18181b">Grooming call</text>
+<text x="916" y="180" font-size="17" fill="#71717a">Most bugs die here</text>
+<rect x="40" y="262" width="262" height="118" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="58" y="294" font-size="13" letter-spacing="1.6" fill="#1100ff">TEAM + PO</text>
+<text x="58" y="328" font-size="21" font-weight="500" fill="#18181b">Sprint planning</text>
+<text x="58" y="356" font-size="17" fill="#71717a">Stories, FE and BE tasks</text>
+<rect x="326" y="262" width="262" height="118" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="344" y="294" font-size="13" letter-spacing="1.6" fill="#1100ff">DEVS</text>
+<text x="344" y="328" font-size="21" font-weight="500" fill="#18181b">Build</text>
+<text x="344" y="356" font-size="17" fill="#71717a">Daily call for blockers only</text>
+<rect x="612" y="262" width="262" height="118" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="630" y="294" font-size="13" letter-spacing="1.6" fill="#1100ff">QA</text>
+<text x="630" y="328" font-size="21" font-weight="500" fill="#18181b">Test and fix loop</text>
+<text x="630" y="356" font-size="17" fill="#71717a">Until the sprint goal is met</text>
+<rect x="898" y="262" width="262" height="118" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="916" y="294" font-size="13" letter-spacing="1.6" fill="#1100ff">PRODUCT MANAGER</text>
+<text x="916" y="328" font-size="21" font-weight="500" fill="#18181b">UAT</text>
+<text x="916" y="356" font-size="17" fill="#71717a">Used as the customer will</text>
+<rect x="40" y="438" width="262" height="118" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="58" y="470" font-size="13" letter-spacing="1.6" fill="#1100ff">ENGINEERING</text>
+<text x="58" y="504" font-size="21" font-weight="500" fill="#18181b">Merge and deploy</text>
+<text x="58" y="532" font-size="17" fill="#71717a">One date, production</text>
+<rect x="326" y="438" width="262" height="118" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="344" y="470" font-size="13" letter-spacing="1.6" fill="#1100ff">CUSTOMER SUCCESS</text>
+<text x="344" y="504" font-size="21" font-weight="500" fill="#18181b">Tell the customer</text>
+<text x="344" y="532" font-size="17" fill="#71717a">The one who asked for it</text>
+<rect x="612" y="438" width="262" height="118" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="630" y="470" font-size="13" letter-spacing="1.6" fill="#1100ff">PRODUCT</text>
+<text x="630" y="504" font-size="21" font-weight="500" fill="#18181b">Ask for feedback</text>
+<text x="630" y="532" font-size="17" fill="#71717a">Back into the roadmap</text>
+</svg>

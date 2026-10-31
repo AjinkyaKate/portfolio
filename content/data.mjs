@@ -192,6 +192,81 @@ export const projects = [
 // Blog posts. Shown as a list on the homepage, each gets its own page at /blog/<slug>/.
 export const posts = [
   {
+    slug: "structure-is-how-small-teams-ship-without-bugs",
+    title: "Structure is how a small team ships without bugs",
+    description: "What I saw work in a scrum team: one owner per step, a grooming call everyone attends, and a loop that ends with the customer.",
+    date: "2026-11-01",
+    readTime: "5 min read",
+    media: { type: "image", src: "/projects/delivery-cycle.svg", fit: "contain" },
+    sections: [
+      {
+        id: "intro",
+        paragraphs: [
+          "I want to write about something unglamorous. In my recent teams we shipped features in short sprints with very few bugs reaching production, and when I think about why, the answer is not a clever tool or a brilliant engineer. It is structure. Every step had one owner, and everyone could see where a thing was. This is how that worked for us in B2B SaaS, and why I think it matters more now that development has become so fast.",
+        ],
+      },
+      {
+        id: "roadmap",
+        title: "It starts before the sprint",
+        paragraphs: [
+          "Nothing reached the team as a vague idea. A feature sat on the roadmap first, and the product team did the discovery around it: what the customer actually asked for, what competitors already had, and where it fit against everything else waiting. Then we wrote it down properly, requirements, details, designs. Only after that did it go anywhere near an estimate.",
+          "I have seen the other version, where a request goes from a customer call straight into a developer's inbox. It feels fast for a day and then it costs you a month.",
+        ],
+      },
+      {
+        id: "grooming",
+        title: "The grooming call is where most bugs die",
+        paragraphs: [
+          "The Scrum Guide now calls it backlog refinement, but every team I have worked with still says grooming. Whatever the name, this call is the most important hour in the cycle, and the reason is who is in the room: QA, the developers, the architect or whoever owns the technical side, and the product manager.",
+          "I explain the feature and the requirements, and then I stop talking. QA asks what happens on the edge cases. The architect says which part is harder than it looks. A developer points out that two requirements quietly contradict each other. If anyone needs time to think, they come back later with the question. Every one of those questions is a bug that did not get written. Finding it in a call costs ten minutes. Finding it in production costs a customer.",
+        ],
+      },
+      {
+        id: "planning",
+        title: "Sprint planning turns it into owned work",
+        paragraphs: [
+          "Once a story is groomed, sprint planning breaks it into tasks, front end and back end, as the requirements demand. The product manager or product owner adds the user stories and sometimes the epic. The developers add the tasks under them, because they know how the work actually splits. Then the team commits to a sprint goal.",
+          "That commitment is the quiet trick in all of this. Nobody is told what they will deliver. They decided it, with the full picture, so they own it.",
+        ],
+      },
+      {
+        id: "daily",
+        title: "Daily calls are for blockers, not status",
+        paragraphs: [
+          "Because the story was already understood and committed, the daily call does not need to re-explain anything. It is about what is in the way. A lot of real discussion happens there, a dependency, an API that behaves differently, a design detail nobody noticed, and it gets resolved the same day instead of surfacing at the end of the sprint.",
+        ],
+      },
+      {
+        id: "qa",
+        title: "QA and the fix loop",
+        paragraphs: [
+          "When a developer marks something done, QA starts testing it against the same requirements everyone heard in grooming. Whatever they find goes back, the developer fixes it, QA checks again. The loop keeps going until the sprint goal is met, not until the time runs out. Having QA in the grooming call is what makes this fast. They are not learning the feature while testing it. They already know what right looks like.",
+        ],
+      },
+      {
+        id: "uat",
+        title: "The product manager does UAT",
+        paragraphs: [
+          "Before anything is deployed, I use it the way the customer will use it. Not a checklist, the actual flow, with the customer's request open next to it. This is the last place to catch the gap between what was built and what was asked, and it is the product manager's job because we are the ones who heard the original ask.",
+          "Then everything gets merged, there is a deployment date, and it goes to production together.",
+        ],
+      },
+      {
+        id: "customer",
+        title: "The loop ends with the customer, not the deploy",
+        paragraphs: [
+          "The feature is not done when it is live. It is done when the customer success team tells the customer who asked for it that it is there, and we ask them what they think. That feedback goes back into discovery, next to the competitor research and the other requests, and it shapes what moves up the roadmap. That is how the product grows, and it is why the roadmap has to be managed and prioritised as carefully as the sprint is.",
+        ],
+      },
+      {
+        id: "close",
+        paragraphs: [
+          "Different teams do this differently, and I am not saying this is the only way. But in B2B SaaS, where one bug can land in front of a hundred customers at once, this is what I have seen work. Development is faster than ever now, and speed without structure just means you ship your mistakes sooner. Structure is what lets a small team move fast and still trust what they put in front of a customer.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "why-did-i-choose-to-become-a-pm",
     title: "Why did I choose to become a PM?",
     description: "The journey of how I got into product management",
