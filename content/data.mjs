@@ -219,6 +219,7 @@ export const posts = [
         paragraphs: [
           "The Scrum Guide now calls it backlog refinement, but every team I have worked with still says grooming. Whatever the name, this call is the most important hour in the cycle, and the reason is who is in the room: QA, the developers, the architect or whoever owns the technical side, and the product manager.",
           "I explain the feature and the requirements, and then I stop talking. QA asks what happens on the edge cases. The architect says which part is harder than it looks. A developer points out that two requirements quietly contradict each other. If anyone needs time to think, they come back later with the question. Every one of those questions is a bug that did not get written. Finding it in a call costs ten minutes. Finding it in production costs a customer.",
+          "There is a second reason I never skip it. Grooming happens every week, and the job each week is to make sure the stories for the next sprint are ready: understood, questioned, and clear enough to estimate. Engineering time is the most valuable thing in the company, and it is also the easiest thing to waste. A developer who starts a sprint with a half-clear story spends the first days asking questions that should have been answered already. Keeping the backlog ready one sprint ahead means when the sprint starts, they build.",
         ],
       },
       {
