@@ -192,8 +192,8 @@ export const projects = [
 // Blog posts. Shown as a list on the homepage, each gets its own page at /blog/<slug>/.
 export const posts = [
   {
-    slug: "structure-is-how-small-teams-ship-without-bugs",
-    title: "Structure is how a small team ships without bugs",
+    slug: "structure-is-how-small-teams-ship-valuable-products",
+    title: "Structure is how a small team ships valuable products",
     description: "What I saw work in a scrum team: one owner per step, a grooming call everyone attends, and a loop that ends with the customer.",
     date: "2026-11-01",
     readTime: "6 min read",
