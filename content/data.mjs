@@ -196,7 +196,7 @@ export const posts = [
     title: "Structure is how a small team ships without bugs",
     description: "What I saw work in a scrum team: one owner per step, a grooming call everyone attends, and a loop that ends with the customer.",
     date: "2026-11-01",
-    readTime: "5 min read",
+    readTime: "6 min read",
     media: { type: "image", src: "/projects/delivery-cycle.svg", fit: "contain" },
     sections: [
       {
@@ -250,6 +250,28 @@ export const posts = [
         paragraphs: [
           "Before anything is deployed, I use it the way the customer will use it. Not a checklist, the actual flow, with the customer's request open next to it. This is the last place to catch the gap between what was built and what was asked, and it is the product manager's job because we are the ones who heard the original ask.",
           "Then everything gets merged, there is a deployment date, and it goes to production together.",
+        ],
+      },
+      {
+        id: "retro",
+        title: "The retro is where the process fixes itself",
+        paragraphs: [
+          "At the end of every sprint we sit down for a retro and everyone shares their thoughts: what went well, what slowed us down, what we want to change next sprint. It is the one call where the process itself is on the table. Everything I have described above was not handed to us as a template. It is the result of many retros, each one adjusting a small thing, a grooming call that ran too long, a story that reached QA too late, a handover that kept getting missed.",
+        ],
+      },
+      {
+        id: "stakeholders",
+        title: "A stakeholder call so nobody is surprised",
+        paragraphs: [
+          "Alongside the team calls there is a regular call with the stakeholders. I give them a brief overview of what shipped, what is in the sprint and what is coming on the roadmap, and they tell me what they want and what their customers are asking for. Those asks do not jump straight into the sprint. They go into discovery and get prioritised with everything else. But because the stakeholders hear the plan every time and see their requests move, there are no surprises on either side, and that trust is what lets the team keep its sprint goal when a new request lands mid-sprint.",
+        ],
+      },
+      {
+        id: "cspo",
+        title: "What the CSPO changed, and what agile means to me",
+        paragraphs: [
+          "Doing the Certified Scrum Product Owner course did not teach me a new process. It gave names and reasons to things we were already doing, and it made the product owner's job plain: own the backlog, own the value, and make sure the team is always working on the most valuable thing it can. That changed how I think about my own role in these calls. I am not there to manage people. I am there to make sure the next most important thing is ready and understood.",
+          "It also settled what agile means to me. The word says it. Be agile. The ceremonies, the grooming, the planning, the retro, are tools for responding to change without losing structure, not rituals to be followed because the book says so. When a ceremony stops helping, the retro changes it. That is the principle working in real life, and it is the part that teams miss when they do scrum as a checklist.",
         ],
       },
       {
