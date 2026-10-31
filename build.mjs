@@ -41,6 +41,7 @@ const head = (title, description, path = "") => `<!DOCTYPE html>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&display=swap" />
 <link rel="stylesheet" href="/styles.css" />
 ${themeScript}
+<script defer src="/_vercel/insights/script.js"></script>
 </head>`;
 
 const collection = ({ id, label, items, initial, view, toggle = true }) => `

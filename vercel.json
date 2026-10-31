@@ -4,7 +4,35 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
-    { "source": "/call", "destination": "https://calendar.app.google/5q6j1oEd2SrCjzKeA", "permanent": false },
-    { "source": "/call/", "destination": "https://calendar.app.google/5q6j1oEd2SrCjzKeA", "permanent": false }
+    {
+      "source": "/call",
+      "destination": "https://calendar.app.google/5q6j1oEd2SrCjzKeA",
+      "permanent": false
+    },
+    {
+      "source": "/call/",
+      "destination": "https://calendar.app.google/5q6j1oEd2SrCjzKeA",
+      "permanent": false
+    },
+    {
+      "source": "/li",
+      "destination": "/?utm_source=linkedin&utm_medium=profile",
+      "permanent": false
+    },
+    {
+      "source": "/li/",
+      "destination": "/?utm_source=linkedin&utm_medium=profile",
+      "permanent": false
+    },
+    {
+      "source": "/hi",
+      "destination": "/?utm_source=email&utm_medium=email",
+      "permanent": false
+    },
+    {
+      "source": "/hi/",
+      "destination": "/?utm_source=email&utm_medium=email",
+      "permanent": false
+    }
   ]
 }
