@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" font-family="Geist, Inter, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1200" height="600" rx="24" fill="#fafafa"/>
+<text x="600" y="54" font-size="26" font-weight="500" fill="#18181b" text-anchor="middle">The same invoice photo, three runs, three answers</text>
+<rect x="60" y="120" width="260" height="360" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="84" y="156" font-size="13" font-weight="400" fill="#1100ff" text-anchor="start" letter-spacing="1.6">INPUT</text>
+<text x="84" y="196" font-size="24" font-weight="500" fill="#18181b" text-anchor="start">Invoice photo</text>
+<text x="84" y="228" font-size="18" font-weight="400" fill="#71717a" text-anchor="start">Taken on a phone,</text>
+<text x="84" y="254" font-size="18" font-weight="400" fill="#71717a" text-anchor="start">slightly tilted</text>
+<rect x="84" y="290" width="212" height="160" rx="8" fill="#fff" stroke="#e4e4e7"/>
+<rect x="100" y="310" width="120" height="8" rx="4" fill="#e4e4e7"/>
+<rect x="100" y="336" width="143" height="8" rx="4" fill="#e4e4e7"/>
+<rect x="100" y="362" width="166" height="8" rx="4" fill="#e4e4e7"/>
+<rect x="100" y="388" width="129" height="8" rx="4" fill="#e4e4e7"/>
+<rect x="100" y="414" width="152" height="8" rx="4" fill="#e4e4e7"/>
+<rect x="100" y="430" width="60" height="10" rx="5" fill="#a1a1aa"/>
+<path d="M322 300 L380 300 L380 160 L430 160" stroke="#a1a1aa" stroke-width="2.5" fill="none"/>
+<rect x="432" y="120" width="330" height="92" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="456" y="150" font-size="13" font-weight="400" fill="#1100ff" text-anchor="start" letter-spacing="1.6">RUN 1</text>
+<text x="456" y="186" font-size="22" font-weight="500" fill="#18181b" text-anchor="start">Total 4,320.00</text>
+<circle cx="730" cy="166" r="12" fill="#16a34a"/>
+<text x="780" y="172" font-size="18" font-weight="400" fill="#16a34a" text-anchor="start">correct</text>
+<path d="M322 300 L380 300 L380 284 L430 284" stroke="#a1a1aa" stroke-width="2.5" fill="none"/>
+<rect x="432" y="244" width="330" height="92" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="456" y="274" font-size="13" font-weight="400" fill="#1100ff" text-anchor="start" letter-spacing="1.6">RUN 2</text>
+<text x="456" y="310" font-size="22" font-weight="500" fill="#18181b" text-anchor="start">Total 4,320.00</text>
+<circle cx="730" cy="290" r="12" fill="#16a34a"/>
+<text x="780" y="296" font-size="18" font-weight="400" fill="#16a34a" text-anchor="start">correct</text>
+<path d="M322 300 L380 300 L380 408 L430 408" stroke="#a1a1aa" stroke-width="2.5" fill="none"/>
+<rect x="432" y="368" width="330" height="92" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="456" y="398" font-size="13" font-weight="400" fill="#1100ff" text-anchor="start" letter-spacing="1.6">RUN 3</text>
+<text x="456" y="434" font-size="22" font-weight="500" fill="#18181b" text-anchor="start">Total 4,820.00</text>
+<circle cx="730" cy="414" r="12" fill="#dc2626"/>
+<text x="780" y="420" font-size="18" font-weight="400" fill="#dc2626" text-anchor="start">misread</text>
+<rect x="860" y="120" width="280" height="160" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="884" y="156" font-size="13" font-weight="400" fill="#1100ff" text-anchor="start" letter-spacing="1.6">QA VERDICT</text>
+<text x="884" y="196" font-size="26" font-weight="500" fill="#dc2626" text-anchor="start">Fail.</text>
+<text x="884" y="228" font-size="17" font-weight="400" fill="#71717a" text-anchor="start">Expected 4,320, got 4,820.</text>
+<text x="884" y="254" font-size="17" font-weight="400" fill="#71717a" text-anchor="start">Bug filed. But nothing is broken.</text>
+<rect x="860" y="320" width="280" height="160" rx="14" fill="#eef0ff" stroke="#1100ff" stroke-width="2"/>
+<text x="884" y="356" font-size="13" font-weight="400" fill="#1100ff" text-anchor="start" letter-spacing="1.6">EVAL VERDICT</text>
+<text x="884" y="396" font-size="26" font-weight="500" fill="#18181b" text-anchor="start">2 of 3 correct.</text>
+<text x="884" y="428" font-size="17" font-weight="400" fill="#71717a" text-anchor="start">Error type: digit confusion.</text>
+<text x="884" y="454" font-size="17" font-weight="400" fill="#71717a" text-anchor="start">Now decide what is acceptable.</text>
+<text x="600" y="560" font-size="18" font-weight="400" fill="#71717a" text-anchor="middle">A model gives different answers to the same input. Pass or fail cannot describe that. A rate can.</text>
+</svg>

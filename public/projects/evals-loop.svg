@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" font-family="Geist, Inter, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1200" height="600" rx="24" fill="#fafafa"/>
+<text x="600" y="54" font-size="26" font-weight="500" fill="#18181b" text-anchor="middle">Evals run every time something changes. QA runs around them.</text>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a1a1aa"/></marker></defs>
+<rect x="40" y="130" width="212" height="150" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="60" y="178" font-size="22" font-weight="500" fill="#18181b" text-anchor="start">Change</text>
+<text x="60" y="212" font-size="16" font-weight="400" fill="#71717a" text-anchor="start">New model, new prompt,</text>
+<text x="60" y="236" font-size="16" font-weight="400" fill="#71717a" text-anchor="start">new data</text>
+<path d="M254 205 L270 205" stroke="#a1a1aa" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="272" y="130" width="212" height="150" rx="14" fill="#eef0ff" stroke="#1100ff" stroke-width="2"/>
+<text x="292" y="178" font-size="22" font-weight="500" fill="#18181b" text-anchor="start">Run the evals</text>
+<text x="292" y="212" font-size="16" font-weight="400" fill="#71717a" text-anchor="start">Same golden set, same</text>
+<text x="292" y="236" font-size="16" font-weight="400" fill="#71717a" text-anchor="start">metrics</text>
+<path d="M486 205 L502 205" stroke="#a1a1aa" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="504" y="130" width="212" height="150" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="524" y="178" font-size="22" font-weight="500" fill="#18181b" text-anchor="start">Compare</text>
+<text x="524" y="212" font-size="16" font-weight="400" fill="#71717a" text-anchor="start">Against last run and</text>
+<text x="524" y="236" font-size="16" font-weight="400" fill="#71717a" text-anchor="start">the bar</text>
+<path d="M718 205 L734 205" stroke="#a1a1aa" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="736" y="130" width="212" height="150" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="756" y="178" font-size="22" font-weight="500" fill="#18181b" text-anchor="start">Ship or hold</text>
+<text x="756" y="212" font-size="16" font-weight="400" fill="#71717a" text-anchor="start">Above the bar ships.</text>
+<text x="756" y="236" font-size="16" font-weight="400" fill="#71717a" text-anchor="start">Below, fix first.</text>
+<path d="M950 205 L966 205" stroke="#a1a1aa" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="968" y="130" width="212" height="150" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="988" y="178" font-size="22" font-weight="500" fill="#18181b" text-anchor="start">Watch production</text>
+<text x="988" y="212" font-size="16" font-weight="400" fill="#71717a" text-anchor="start">New failures join the</text>
+<text x="988" y="236" font-size="16" font-weight="400" fill="#71717a" text-anchor="start">golden set</text>
+<path d="M1074 282 L1074 320 L146 320 L146 282" stroke="#a1a1aa" stroke-width="2.5" fill="none" stroke-dasharray="7 7" marker-end="url(#a)"/>
+<rect x="40" y="370" width="1120" height="190" rx="14" fill="#fff" stroke="#e4e4e7" stroke-width="1.5"/>
+<text x="64" y="406" font-size="13" font-weight="400" fill="#1100ff" text-anchor="start" letter-spacing="1.6">QA STILL OWNS EVERYTHING AROUND THE MODEL</text>
+<circle cx="74" cy="444" r="10" fill="#16a34a"/>
+<path d="M68 444 l4 4 l8 -9" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<text x="96" y="450" font-size="19" font-weight="400" fill="#18181b" text-anchor="start">Upload and file types</text>
+<circle cx="444" cy="444" r="10" fill="#16a34a"/>
+<path d="M438 444 l4 4 l8 -9" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<text x="466" y="450" font-size="19" font-weight="400" fill="#18181b" text-anchor="start">Review screen and edits</text>
+<circle cx="814" cy="444" r="10" fill="#16a34a"/>
+<path d="M808 444 l4 4 l8 -9" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<text x="836" y="450" font-size="19" font-weight="400" fill="#18181b" text-anchor="start">Saving to the catalog</text>
+<circle cx="74" cy="494" r="10" fill="#16a34a"/>
+<path d="M68 494 l4 4 l8 -9" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<text x="96" y="500" font-size="19" font-weight="400" fill="#18181b" text-anchor="start">Permissions and roles</text>
+<circle cx="444" cy="494" r="10" fill="#16a34a"/>
+<path d="M438 494 l4 4 l8 -9" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<text x="466" y="500" font-size="19" font-weight="400" fill="#18181b" text-anchor="start">Speed and errors</text>
+<circle cx="814" cy="494" r="10" fill="#16a34a"/>
+<path d="M808 494 l4 4 l8 -9" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<text x="836" y="500" font-size="19" font-weight="400" fill="#18181b" text-anchor="start">Mobile layout</text>
+</svg>

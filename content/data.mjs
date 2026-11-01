@@ -192,6 +192,71 @@ export const projects = [
 // Blog posts. Shown as a list on the homepage, each gets its own page at /blog/<slug>/.
 export const posts = [
   {
+    slug: "evals-for-product-managers",
+    title: "Evals, explained for product managers",
+    description: "How evals differ from QA testing, why every AI feature needs them, and what goes into a one-page evals document.",
+    date: "2026-11-01",
+    readTime: "5 min read",
+    media: { type: "image", src: "/projects/evals-hero.svg", fit: "contain" },
+    sections: [
+      {
+        id: "intro",
+        paragraphs: [
+          "The first AI feature I shipped taught me a word I had not needed before: evals. QA was filing bugs against the invoice reader that were not bugs. The same invoice photo gave a slightly different total on two runs, and our test cases, written the old way, could only say pass or fail. Nothing was broken. We just did not have a way to say how good the feature was. This post is the simple version of what I learned, for product managers who are about to write their first requirements for an AI feature.",
+        ],
+      },
+      {
+        id: "difference",
+        title: "QA asks does it work. Evals ask how well, and where does it fail",
+        paragraphs: [
+          "QA testing is built for software that behaves the same way every time. One input, one expected output, pass or fail. That still matters for everything around the model: the upload button, the review screen, saving to the catalog, permissions.",
+          "A model does not behave the same way every time. It can be right on most inputs and wrong on a few, and the few are not random. They cluster around handwriting, tilted photos, items with no sales history. So an eval does not ask whether the feature works. It runs the model over many real inputs where we already know the right answer, and gives back a score and a list of where it fell short. That is the number the product decision is made on.",
+        ],
+        figure: "/projects/evals-same-input.svg",
+      },
+      {
+        id: "golden",
+        title: "Start with real examples and the right answers",
+        paragraphs: [
+          "The most useful thing I bring to an AI feature is not a prompt. It is a folder of real inputs with the correct answers written down by hand. For the invoice reader it was real supplier invoices with the right supplier, total and line items typed out. For demand forecasting it was the sales history of five stores with the recent weeks hidden, so we could check the forecast against what actually sold.",
+          "This set is called a golden set, and it does two jobs. Engineers test against it, and I test candidate models against it before we commit to one. When something regresses later, the conversation is about invoice number seven, not about feelings.",
+        ],
+      },
+      {
+        id: "metrics",
+        title: "Pick the few numbers that matter, and set the bar before you look",
+        paragraphs: [
+          "One accuracy figure hides too much. For the invoice reader we tracked accuracy per field, because a wrong supplier name is an annoyance and a wrong total is a wrong payment. For forecasting the number that mattered was bias, whether the model was consistently under or over, because that is what causes stockouts.",
+          "Then decide the bar before the results come in. What score is good enough to ship. Below what score a field must go to a human for review instead of being saved automatically. If you set the bar after seeing the number, you will set it wherever the number landed.",
+        ],
+      },
+      {
+        id: "document",
+        title: "What goes into the evals document",
+        paragraphs: [
+          "Mine is one page and it sits next to the requirements. Purpose, in one line. The golden set, where it lives and how it was built. The metrics, the few numbers we track. The bar, decided up front. The failure buckets, so when something fails we can say which kind. And the cadence and owner: it runs on every model or prompt change, the product manager owns the set, engineering runs it.",
+          "Writing this page before engineering starts changed how I write requirements more than anything else this year. The acceptable range replaced the expected output.",
+        ],
+        figure: "/projects/evals-document.svg",
+      },
+      {
+        id: "loop",
+        title: "Run it on every change, and let QA do its own job",
+        paragraphs: [
+          "Models get swapped, prompts get edited, data drifts. Each of those is a change, and the evals run again on the same golden set so we can compare with the last run. Above the bar ships. Below the bar, we fix first. New failures from production go into the golden set so the next run catches them.",
+          "None of this replaces QA. QA still tests everything around the model, and that is most of the product. Evals test the behaviour of the model itself. An AI feature needs both, and the mistake I see teams make is using one to do the other's job.",
+        ],
+        figure: "/projects/evals-loop.svg",
+      },
+      {
+        id: "close",
+        paragraphs: [
+          "If you are writing requirements for an AI feature for the first time, start with the folder of real examples. Everything else in this post follows from it.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "structure-is-how-small-teams-ship-valuable-products",
     title: "Structure is how a small team ships valuable products",
     description: "What I saw work in a scrum team: one owner per step, a grooming call everyone attends, and a loop that ends with the customer.",
